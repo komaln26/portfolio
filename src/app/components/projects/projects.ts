@@ -16,6 +16,17 @@ export class Projects {
   t = computed(() => this.title[this.language.lang()])
   projects = [
     {
+      id: 'portfolio',
+      name: 'This portfolio',
+      stack: 'Angular · TypeScript · SCSS',
+      github: 'https://github.com/komaln26/portfolio',
+      status: { en: 'Live', ja: '公開中' },
+      desc: {
+        en: 'A bilingual (English and Japanese) portfolio built with Angular. Navigation is a train line that follows your scrolling, and the language is managed with signals and a shared service.',
+        ja: 'Angularで作った、英語と日本語に切り替えられるポートフォリオサイトです。ナビゲーションは電車の路線図をモチーフにしていて、スクロールに合わせて電車が動きます。言語の切り替えはSignalと共有サービスで管理しています。',
+      },
+    },
+    {
       id: 'travel-planner',
       name: 'Japan travel planner',
       stack: 'React · TypeScript',

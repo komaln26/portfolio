@@ -1,0 +1,71 @@
+.experience {
+    padding: 40px 60px;
+    border-top: 1px solid var(--rule);
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--muted);
+    margin: 32px 0 12px;
+}
+
+.job-title {
+    font-size: 18px;
+    margin: 0 0 4px;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 16px;
+}
+
+.project {
+    border-left: 2px solid var(--rule);
+    padding-left: 20px;
+    margin: 0 0 28px;
+}
+
+.kind {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0 0 4px;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.bullets {
+    margin: 0 0 14px;
+    padding-left: 18px;
+    line-height: 1.7;
+    max-width: 70ch;
+}
+
+.tags,
+.certs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags li {
+    border: 1px solid var(--rule);
+    background: var(--paper-deep);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .experience {
+        padding: 32px 24px;
+    }
+}

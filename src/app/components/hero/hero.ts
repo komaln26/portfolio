@@ -10,8 +10,8 @@ import { Language } from '../../services/language';
 export class Hero {
   language = inject(Language)
   text = {
-    en: { line1: 'Frontend developer', line2: 'building careful interfaces', view: 'View work', resume: 'Resume', sub: 'Open to opportunities in Japan' },
-    ja: { line1: 'フロントエンド開発者', line2: '丁寧なインターフェースを作る', view: '作品を見る', resume: '履歴書', sub: '日本での就職を目指しています' }
+    en: { line1: 'Web engineer', line2: 'building accessible, reliable web applications', view: 'View work', projects: 'View projects', sub: 'Open to opportunities in Japan' },
+    ja: { line1: 'Webエンジニア', line2: 'アクセシブルで信頼性の高いWebアプリケーションを作る', view: '職務経歴を見る', projects: '作品を見る', sub: '日本での就職を目指しています' }
   }
 
   t = computed(() => this.text[this.language.lang()])

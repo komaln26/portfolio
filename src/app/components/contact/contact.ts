@@ -13,11 +13,11 @@ export class Contact {
   text = {
     en: {
       title: 'Contact',
-      intro: "Interested in working together, or just want to say hi? Feel free to reach out. I'm looking for frontend roles in Japan.",
+      intro: "Interested in working together, or just want to say hi? Feel free to reach out. I'm looking for web engineering roles in Japan.",
     },
     ja: {
       title: '連絡',
-      intro: 'ご興味をお持ちいただけましたら、お気軽にご連絡ください。日本でのフロントエンドエンジニアのお仕事を探しています。',
+      intro: 'ご興味をお持ちいただけましたら、お気軽にご連絡ください。日本でのWebエンジニアのお仕事を探しています。',
     },
   }
 

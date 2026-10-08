@@ -61,15 +61,16 @@
 
 @media (max-width: 700px) {
     .rail {
-        --edge: 52px;
+        --edge: 48px;
         padding: 40px 24px;
     }
 
     .station {
-        width: 56px;
+        width: 48px;
     }
 
     .label {
-        font-size: 12px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 }

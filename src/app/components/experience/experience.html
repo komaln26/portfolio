@@ -1,0 +1,33 @@
+<section class="experience" id="experience">
+    <h2>{{ t().title }}</h2>
+
+    <h3>{{ t().work }}</h3>
+    <p class="job-title">{{ job.title[language.lang()] }} · {{ job.company }}</p>
+    <p class="meta">{{ job.place[language.lang()] }} · {{ job.dates[language.lang()] }}</p>
+
+    @for (project of job.projects; track project.id) {
+    <article class="project">
+        <p class="kind">{{ project.kind[language.lang()] }}</p>
+        <h4>{{ project.name[language.lang()] }}</h4>
+        <ul class="bullets">
+            @for (point of project.bullets[language.lang()]; track $index) {
+            <li>{{ point }}</li>
+            }
+        </ul>
+        @if (project.tags.length) {
+        <ul class="tags">
+            @for (tag of project.tags; track tag) {
+            <li>{{ tag }}</li>
+            }
+        </ul>
+        }
+    </article>
+    }
+
+    <h3>{{ t().education }}</h3>
+    @for (item of education; track item.id) {
+    <p class="job-title">{{ item.degree[language.lang()] }}</p>
+    <p class="meta">{{ item.school[language.lang()] }} · {{ item.dates[language.lang()] }} · {{
+        item.grade[language.lang()] }}</p>
+    }
+</section>

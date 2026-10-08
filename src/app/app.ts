@@ -6,6 +6,7 @@ import { About } from './components/about/about';
 import { Projects } from './components/projects/projects';
 import { Skills } from './components/skills/skills';
 import { Contact } from './components/contact/contact';
+import { Experience } from './components/experience/experience';
 
 @Component({
   imports: [
@@ -15,7 +16,8 @@ import { Contact } from './components/contact/contact';
     About,
     Projects,
     Skills,
-    Contact
+    Contact,
+    Experience
   ],
   selector: 'app-root',
   styleUrl: './app.scss',

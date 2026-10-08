@@ -17,8 +17,8 @@ export class Skills {
 
   groups = [
     {
-      id: 'frontend',
-      label: { en: 'Frontend', ja: 'フロントエンド' },
+      id: 'technologies',
+      label: { en: 'Technologies', ja: '使用技術' },
       items: [
         { en: 'Angular', ja: 'Angular' },
         { en: 'React', ja: 'React' },

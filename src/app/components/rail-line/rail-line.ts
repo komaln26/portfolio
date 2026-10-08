@@ -37,6 +37,7 @@ export class RailLine {
   stations = [
     { id: 'home', en: 'Home', ja: 'ホーム' },
     { id: 'about', en: 'About', ja: '概要' },
+    { id: 'experience', en: 'Experience', ja: '経歴' },
     { id: 'projects', en: 'Projects', ja: '作品' },
     { id: 'skills', en: 'Skills', ja: '技術' },
     { id: 'contact', en: 'Contact', ja: '連絡' }
