@@ -1,0 +1,9 @@
+<nav class="rail">
+    @for (station of stations; track station.id) {
+    <div class="station" (click)="select(station.id)" [class.active]="active() === station.id">
+        <span class="dot"></span>
+        <span class="label">{{language.lang() === 'ja' ? station.ja : station.en}}</span>
+    </div>
+    }
+    <div class="train" [style.--p]="progress()"></div>
+</nav>

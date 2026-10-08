@@ -1,0 +1,40 @@
+.about {
+    padding: 40px 60px;
+    border-top: 1px solid var(--rule);
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+img {
+    width: 170px;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.text p {
+    font-size: 17px;
+    margin: 0 0 16px;
+    line-height: 1.7;
+}
+
+.text {
+    max-width: 62ch;
+}
+
+@media (max-width: 700px) {
+    .about {
+        padding: 32px 24px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}

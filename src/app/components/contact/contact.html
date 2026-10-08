@@ -1,0 +1,15 @@
+<section class="contact" id="contact">
+    <h2>{{ t().title }}</h2>
+    <p class="intro">{{ t().intro }}</p>
+    <ul>
+        @for (link of links; track link.id) {
+        <li>
+            @if (link.id === 'email') {
+            <a [href]="link.href">{{ link.label }}</a>
+            } @else {
+            <a [href]="link.href" target="_blank" rel="noopener">{{ link.label }}</a>
+            }
+        </li>
+        }
+    </ul>
+</section>

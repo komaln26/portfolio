@@ -1,0 +1,75 @@
+.rail {
+    --edge: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.station {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.station.active .dot {
+    background: var(--stamp);
+    border-color: var(--stamp);
+}
+
+.station.active .label {
+    color: var(--stamp);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    position: relative;
+    z-index: 1;
+    transition: all 0.25s ease;
+}
+
+.rail::before {
+    content: '';
+    position: absolute;
+    left: var(--edge);
+    right: var(--edge);
+    top: 45px;
+    height: 3px;
+    background: var(--line);
+}
+
+.train {
+    position: absolute;
+    top: 40px;
+    left: calc(var(--edge) + (100% - 2 * var(--edge)) * var(--p));
+    width: 56px;
+    height: 14px;
+    border-radius: 7px;
+    background: var(--stamp);
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+    transition: left 0.6s ease;
+}
+
+@media (max-width: 700px) {
+    .rail {
+        --edge: 52px;
+        padding: 40px 24px;
+    }
+
+    .station {
+        width: 56px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+}

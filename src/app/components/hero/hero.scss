@@ -1,0 +1,89 @@
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 span {
+    display: block;
+}
+
+.hero {
+    padding: 40px 60px;
+    position: relative;
+}
+
+.accent {
+    color: var(--stamp);
+    font-style: italic;
+}
+
+.primary {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.sub {
+    color: var(--muted);
+    margin-top: 20px;
+}
+
+.vertical {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    writing-mode: vertical-rl;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: var(--muted);
+}
+
+.stamp {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    background: var(--stamp);
+    color: var(--paper);
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 32px 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .vertical,
+    .stamp {
+        display: none;
+    }
+}

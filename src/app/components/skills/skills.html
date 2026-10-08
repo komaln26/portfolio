@@ -1,0 +1,11 @@
+<section class="skills" id="skills">
+    <h2>{{t().title }}</h2>
+    @for(group of groups; track group.id){
+    <h3>{{group.label[language.lang()]}}</h3>
+    <ul>
+        @for (item of group.items; track item.en){
+        <li>{{ item[language.lang()]}}</li>
+        }
+    </ul>
+    }
+</section>

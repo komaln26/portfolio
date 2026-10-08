@@ -1,0 +1,14 @@
+<section class="projects" id="projects">
+    <h2>{{t().title}}</h2>
+    <div class="grid">
+        @for (project of projects; track project.id) {
+        <article class="card">
+            <h3>{{project.name}}</h3>
+            <p class="stack">{{project.stack}}</p>
+            <p class="status">{{project.status[language.lang()]}}</p>
+            <p>{{project.desc[language.lang()]}}</p>
+            <a class="link" [href]="project.github" target="_blank" rel="noopener">Github</a>
+        </article>
+        }
+    </div>
+</section>

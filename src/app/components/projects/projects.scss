@@ -1,0 +1,57 @@
+.projects {
+    padding: 40px 60px;
+    border-top: 1px solid var(--rule);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 560px));
+    gap: 20px;
+}
+
+.card {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0 0 6px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.stack {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.status {
+    display: inline-block;
+    border: 1px solid var(--stamp);
+    color: var(--stamp);
+    border-radius: 999px;
+    padding: 2px 12px;
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--ink);
+    border-bottom: 1px solid var(--stamp);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--stamp);
+}
+
+@media (max-width: 700px) {
+    .projects {
+        padding: 32px 24px;
+    }
+}
